@@ -37,7 +37,115 @@
         </nav>
     </header>
 
-    <!-- isi homepage -->
+   <!-- HERO -->
+    <section class="hero">
+        <small>SINCE 2005</small>
+        <h1>Mr.Go Mangonkong</h1>
+    </section>
+
+        <section class="cards" id="cardContainer"></section>
+
+            <section class="quote">
+                <h2>“Ayam Sehat, Telur Berkualitas”</h2>
+                <p>Mr.Go Mangonkong</p>
+            </section>
+
+        <section class="about">
+            <div class="about-img">Gambar Tempat</div>
+
+            <div class="about-text" id="aboutText"></div>
+        </section>
+
+<script>
+    const dataAyam = [
+        {
+            judul:"Ayam Petelur",
+            desc:"Ayam yang menghasilkan telur berkualitas tinggi setiap hari."
+        },
+        {
+            judul:"Ayam Pedaging",
+            desc:"Ayam unggulan dengan pertumbuhan cepat dan daging berkualitas."
+        },
+        {
+            judul:"Ayam Hias",
+            desc:"Ayam unik dengan tampilan menarik cocok untuk koleksi."
+        }
+    ];
+
+        const container = document.getElementById("cardContainer");
+
+        dataAyam.forEach(item => {
+            container.innerHTML += `
+                <div class="card">
+                    <div class="card-img"></div>
+                    <div class="card-title">${item.judul}</div>
+                    <div class="card-desc">${item.desc}</div>
+                </div>
+            `;
+        });
+
+            document.getElementById("aboutText").innerHTML = `
+                <h3>About Us</h3>
+                <p>
+                Kami menyediakan informasi lengkap tentang berbagai jenis ayam 
+                untuk kebutuhan peternakan modern.
+                </p>
+                <a href="#" class="btn">Pelajari Selengkapnya</a>
+            `;
+</script>
+
+    <!-- FOOTER -->
+<footer>
+    <div class="footer">
+
+        <!-- KIRI -->
+                <div class="footer-left">
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>
+                            82 Jl. Robert W Monginsidi, Tukang Kayu, Kecamatan Banyuwangi,
+                            Kabupaten Banyuwangi, Jawa Timur, Indonesia.
+                        </p>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+6281334577904">+62 813-3457-7904</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="#">@Mr.Go Mangonkong</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="#">Chat WhatsApp</a>
+                    </div>
+
+            </div>
+
+        <!-- TENGAH -->
+        <div class="footer-links">
+            <h4>Information</h4>
+            <a href="index.html">Beranda</a>
+            <a href="#">Kategori</a>
+            <a href="page/tentang.html">Tentang</a>
+            <a href="page/kontak.html">Kontak</a>
+        </div>
+
+        <!-- KANAN -->
+        <div class="footer-links">
+            <h4>Social</h4>
+            <a href="https://wa.me/6281334577904" target="_blank">Whatsapp</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+
+    </div>
+
+    <div class="copy">©2026 Mr.Go Mangonkong</div>
+</footer>
 
     <script src="js/script.js"></script>
 </body>

@@ -173,3 +173,178 @@ nav {
     font-size: 12px;
     margin-left: 5px;
 }
+
+/* HERO */
+.hero{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:white;
+}
+
+.hero small{
+    letter-spacing:4px;
+    color:#999;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    margin-top:10px;
+    color:#A82323;
+}
+
+/* CARD */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:-80px;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:#eee;
+    border-radius:20px;
+    padding:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card-img{
+    height:180px;
+    background:#dcdcdc;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.card-title{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.card-desc{
+    font-size:14px;
+    color:#666;
+}
+
+.quote{
+    text-align:center;
+    margin-top:30px;
+}
+
+.about{
+    display:flex;
+    gap:30px;
+    padding:50px 80px;
+}
+
+.about-img{
+    flex:2;
+    background:#ddd;
+    height:260px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-text{
+    flex:1;
+    background:#eee;
+    padding:25px;
+    border-radius:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 15px;
+    background:#A82323;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* footer */
+footer{
+    background:#A82323;
+    color:white;
+    padding:40px 60px;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.footer-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:12px;
+}
+
+.footer-item i{
+    font-size:18px;
+    margin-top:3px;
+}
+
+.footer-item p,
+.footer-item a{
+    margin:0;
+    color:white;
+    text-decoration:none;
+}
+
+.footer i{
+    margin-right:15px;
+    margin-top: 4px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin:6px 0;
+    transition:0.3s;
+}
+.footer a:hover{
+    color:black;
+}
+
+.footer-left p{
+    margin-bottom: 5px;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .cards{
+        flex-direction:column;
+        align-items:center;
+        margin-top:0;
+    }
+
+    .about{
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}
