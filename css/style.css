@@ -310,6 +310,10 @@ footer{
     margin-top: 4px;
 }
 
+.footer-links h4,a{
+   margin-right: 5rem;
+}
+
 .footer a{
     color:white;
     text-decoration:none;
