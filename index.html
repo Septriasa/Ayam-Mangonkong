@@ -24,10 +24,16 @@
                 </a>
 
                 <!-- pilihan jenis ayam -->
-                 <!-- jangan lupa isien ndek sini sambungannya -->
                 <ul class="dropdown-content">
-                    <li><a href="../page/mangonkong-original.html">Ayam Mangonkong Original</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="mangonkong-original.html">Mangonkong Original</a></li>
+                    <li><a href="mangonkong-assel.html">Mangonkong Assel</a></li>
+                    <li><a href="mangonkong-booster.html">Mangonkong Booster</a></li>
+                    <li><a href="mangonkong-extra-pama.html">Mangonkong Extra Pama</a></li>
+                    <li><a href="mangonkong-platinum-bangkok.html">Mangonkong Platinum Bangkok</a></li>
+                    <li><a href="mangonkong-platinum-khoygon.html">Mangonkong Platinum Khoygon</a></li>
+                    <li><a href="mangonkong-platinum-plucker.html">Mangonkong Platinum Plucker</a></li>
+                    <li><a href="mangonkong-shamo.html">Mangonkong Shamo</a></li>
+                    <li><a href="mangonkong-vietkong.html">Mangonkong Vietkong</a></li>
                 </ul>
             </li>
 
@@ -41,109 +47,109 @@
     </nav>
 </header>
 
-   <!-- HERO -->
+   <!-- Bagian Hero -->
     <section class="hero">
-        <small>SINCE 1998</small>
+        <small>SINCE 2019</small>
         <h1>Mr.Go Mangonkong</h1>
     </section>
 
-        <section class="cards" id="cardContainer"></section>
+    <section class="cards" id="cardContainer"></section>
 
-            <section class="quote">
-                <h2>“Ayam Sehat, Telur Berkualitas”</h2>
-                <p>Mr.Go Mangonkong</p>
-            </section>
+        <section class="quote">
+            <h2>“Ayam Sehat, Telur Berkualitas”</h2>
+            <p>Mr.Go Mangonkong</p>
+        </section>
 
         <section class="about">
-            <div class="about-img">Gambar Tempat</div>
-
-            <div class="about-text" id="aboutText"></div>
+            <div class="about-img">Gambar Tempat Kandang</div>
+            <div class="about-text" id="aboutText">
+                <!-- Diisi oleh JavaScript -->
+            </div>
         </section>
 
 <script>
     const dataAyam = [
         {
-            judul:"Ayam Petelur",
-            desc:"Ayam yang menghasilkan telur berkualitas tinggi setiap hari."
+            judul: "Ayam Mangonkong Original",
+            desc: "Mangonkong original yakni ayam mangonkong murni bergaya atas kadang ada turunnya tapi sangat tahan pukul dan punya pukulan mematikan lawan.",
+            img: "images/mangonkong original.png"
         },
         {
-            judul:"Ayam Pedaging",
-            desc:"Ayam unggulan dengan pertumbuhan cepat dan daging berkualitas."
+            judul: "Mangonkong Telur Ayam",
+            desc: "Butiran telur dengan cangkang yang kuat dan bersih ini bukan sekadar hasil produksi, melainkan indikator bahwa ayam hidup dalam lingkungan yang nyaman.",
+            img: "images/telur.png"
         },
         {
-            judul:"Ayam Hias",
-            desc:"Ayam unik dengan tampilan menarik cocok untuk koleksi."
+            judul: "Costumer Ayam Mangonkong",
+            desc: "Baru-baru ini, salah satu pelanggan kami datang langsung untuk menjemput koleksi ayam Mangonkong. Pelanggan tampak sangat puas dan bangga.",
+            img: "images/dokumentasi.png"
         }
     ];
 
-        const container = document.getElementById("cardContainer");
-
-        dataAyam.forEach(item => {
-            container.innerHTML += `
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="card-title">${item.judul}</div>
-                    <div class="card-desc">${item.desc}</div>
+    const container = document.getElementById("cardContainer");
+    dataAyam.forEach(item => {
+        container.innerHTML += `
+            <div class="card">
+                <div class="card-img">
+                    <img src="${item.img}" alt="${item.judul}" onerror="this.style.display='none'">
                 </div>
-            `;
-        });
+                <div class="card-title">${item.judul}</div>
+                <div class="card-desc">${item.desc}</div>
+            </div>
+        `;
+    });
 
-            document.getElementById("aboutText").innerHTML = `
-                <h3>About Us</h3>
-                <p>
-                Kami menyediakan informasi lengkap tentang berbagai jenis ayam 
-                untuk kebutuhan peternakan modern.
-                </p>
-                <a href="#" class="btn">Pelajari Selengkapnya</a>
-            `;
+    document.getElementById("aboutText").innerHTML = `
+        <h3>About Us</h3>
+        <p>
+        Ingin mengenal lebih dekat dunia Ayam Mangonkong? Kami siap memberikan informasi terbaik seputar jenis-jenis ayam yang kami tampilkan. Jangan ragu untuk menghubungi kami kapan saja!
+        </p>
+        <a href="#" class="btn">Pelajari Selengkapnya</a>
+    `;
 </script>
 
-    <!-- FOOTER -->
+
+
+
+
+    <!-- Bagian Footer -->
 <footer>
-    <div class="footer">
-
-        <!-- KIRI -->
-                <div class="footer-left">
-
-                    <div class="footer-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>
-                            82 Jl. Robert W Monginsidi, Tukang Kayu, Kecamatan Banyuwangi, <br>
-                            Kabupaten Banyuwangi, Jawa Timur, Indonesia.
-                        </p>
-                    </div>
-
-                    <div class="footer-item">
-                        <i class="fa-brands fa-facebook"></i>
-                        <a href="#">@Mr.Go Mangonkong</a>
-                    </div>
-
-                    <div class="footer-item">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <a href="#">+62 813-3457-7904</a>
-                    </div>
-
+    <div class="footer-container">
+        <div class="footer-info">
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>82 Jl. Robert W Monginsidi, Tukang Kayu, Kecamatan Banyuwangi,<br>
+                   Kabupaten Banyuwangi, Jawa Timur, Indonesia.</p>
             </div>
+            <div class="footer-item">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#">@Mr.Go Mangonkong</a>
+            </div>
+            <div class="footer-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="#">+62 813-3457-7904</a>
+            </div>
+        </div>
 
-        <!-- TENGAH -->
-        <div class="footer-links">
+        <div class="footer-nav">
             <h4>Information</h4>
             <a href="index.html">Beranda</a>
-            <a href="#">Kategori</a>
+            <a href="#">Katalog</a>
             <a href="page/tentang.html">Tentang</a>
             <a href="page/kontak.html">Kontak</a>
         </div>
 
-        <!-- KANAN -->
-        <div class="footer-links">
+        <div class="footer-social">
             <h4>Social</h4>
-            <a href="https://wa.me/6281334577904" target="_blank">Whatsapp</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="#">Whatsapp</a>
+            <a href="#">Facebook</a>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
         </div>
-
     </div>
-
-    <div class="copy">©2026 Mr.Go Mangonkong</div>
+    <div class="copy">© 2026 Mr.Go Mangonkong. All Rights Reserved</div>
 </footer>
 
     <script src="js/script.js"></script>
