@@ -10,6 +10,7 @@
 
 body {
     background-color: #ffff;
+    padding-top:50px;
 }
 
 /* Bagian Navbar  */
@@ -372,4 +373,197 @@ footer {
     .hero h1{
         font-size:40px;
     }
+}
+/* Katalog */
+.container{
+  padding:60px 80px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:50px;
+}
+
+.cardd{
+  width:320px;
+  background:#ffffff;
+  border-radius:20px;
+  padding:35px;
+  border:1px solid #d1d1d1;
+  text-align:center;
+  margin:auto;
+  transition: 0.3s;
+}
+
+.cardd img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.cardd h3{
+  margin-bottom:10px;
+  font-size:14px;
+}
+.cardd:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+
+.btn{
+  background:#b30000;
+  color:#ffffff;
+  padding:8px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* ===== DETAIL ===== */
+.detail{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px;
+}
+
+.detail-text{
+  width:50%;
+}
+
+.detail-text h1{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.detail-text p{
+  line-height:1.6;
+}
+
+.detail-img img{
+  width:360px;
+}
+
+/* =========================
+   TITLE KATALOG
+========================= */
+
+.katalog-title{
+    text-align:center;
+    margin-bottom:60px;
+    font-family: 'Poppins', sans-serif;
+}
+/* TEXT RED */
+.katalog-title span{
+    display:block;
+    font-size:24px;
+    font-weight:500;
+    color:#A82323;
+    margin-bottom:10px;
+    letter-spacing:1px;
+    font-weight: 600;
+}
+/* MAIN TITLE */
+.katalog-title h1{
+    font-size:54px;
+    font-weight:700;
+    color:#000000;
+    line-height:1.3;
+}
+
+/* detail */
+.active-nav{
+  font-weight:700;
+}
+.detail-wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:
+  80px
+  100px
+  60px;
+  min-height:700px;
+  font-family: 'Poppins', sans-serif;
+}
+.detail-left{
+  width:52%;
+}
+.detail-left h1{
+  font-size:64px;
+  line-height:1.1;
+  font-weight:600;
+  margin-bottom:40px;
+  color:#000000;
+}
+.detail-left p{
+  width:90%;
+  font-size:20px;
+  line-height:1.9;
+  color:#333333;
+}
+.detail-right{
+  width:48%;
+  display:flex;
+  justify-content:center;
+}
+.detail-right img{
+  width:360px;
+  height:520px;
+  object-fit:cover;
+  border-radius:10px;
+}
+/* =========================
+   CARD REKOMENDASI
+========================= */
+
+.recommendation-section{
+  display:flex;
+  justify-content:center;
+  gap:45px;
+  padding:
+  20px
+  80px
+  80px;
+}
+.recommend-card{
+  width:320px;
+  background:#ffffff;
+  border:1px  solid
+  #d8d8d8;
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0px  4px 10px
+  rgba(0,0,0,0.05);
+  transition: 0.3s;
+
+}
+.recommend-card h3{
+  font-size:15px;
+  margin-bottom:15px;
+  
+}
+.recommend-card img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  border-radius:10px;
+  
+}
+.recommend-card button{
+  margin-top:20px;
+  width:120px;
+  height:40px;
+  border:none;
+  border-radius:10px;
+  background:#b30000;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+.recommend-card button:hover{
+  background:#8f0000;
+  
 }
