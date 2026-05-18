@@ -569,7 +569,7 @@ footer {
   
 }
 
-/* Bagian Kontak */
+/* About */
 .about-container {
     max-width: 1100px;
     margin: 80px auto;
@@ -616,6 +616,17 @@ footer {
 .img-small:nth-child(3) {
     background-image: url('../assets/ayam-kecil2.jpg');
     background-size: cover;
+}
+
+/* IMAGE */
+
+.img-large img,
+.img-small img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
 }
 
 .content-section {
@@ -667,7 +678,7 @@ footer {
 }
 
 /* Bagian Kontak */
-.contact-container {
+/* .contact-container {
         display: flex;
         max-width: 1100px;
         margin: 50px auto;
@@ -682,31 +693,125 @@ footer {
     height: 350px;
     object-fit: cover; 
     border-radius: 20px; 
+    
 }
 
-    .content-section {
-        flex: 1;
-    }
+.content-section {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+.content-section{
+    flex: 0.8;
+}
 
     .content-section h1 {
-        font-size: 36px;
-        font-weight: 800;
-        margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 35px;
     }
 
     .btn-contact {
-        background-color: #a52a2a; /* Warna merah branding */
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: 0.3s;
+       background-color: #a52a2a;
+    color: white;
+    border: none;
+
+    padding: 18px 45px;
+
+    border-radius: 50px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    display: inline-block;
     }
 
     .btn-contact:hover {
         background-color: #800000;
         transform: scale(1.05);
     }
+    .contact-container{
+    max-width: 1300px;
+    margin: 120px auto 80px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+.image-placeholder{
+    flex: 1.7;
+    
+}
+.image-placeholder{
+    min-width: 700px;
+} */
+ .contact-container {
+    max-width: 1300px;
+    margin: 120px auto 80px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.image-placeholder{
+    flex: 1.3;
+    min-width: 500px;
+}
+
+.contact-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.content-section{
+    flex: 0.8;
+}
+
+.content-section h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.content-section p{
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.btn-contact {
+    background-color: #a52a2a;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-contact:hover {
+    background-color: #800000;
+    transform: scale(1.05);
+}
