@@ -49,22 +49,21 @@
 
    <!-- Bagian Hero -->
     <section class="hero">
-        <small>SINCE 2019</small>
-        <h1>Mr.Go Mangonkong</h1>
-    </section>
+    <small>SINCE 2019</small>
+    <h1>Mr.Go Mangonkong</h1>
+</section>
 
-    <section class="cards" id="cardContainer"></section>
+<section class="cards" id="cardContainer"></section>
 
-        <section class="quote">
-            <h2>“Ayam Sehat, Telur Berkualitas”</h2>
-            <p>Mr.Go Mangonkong</p>
-        </section>
+<section class="quote">
+    <h2>“Ayam Sehat, Telur Berkualitas”</h2>
+    <p>Mr.Go Mangonkong</p>
+</section>
 
-        <section class="about">
-            <div class="about-img">Gambar Tempat Kandang</div>
-            <div class="about-text" id="aboutText">
-            </div>
-        </section>
+<section class="about">
+    <div id="aboutImage">Gambar Tempat Kandang</div>
+    <div class="about-text" id="aboutText"></div>
+</section>
 
 <script>
     const dataAyam = [
@@ -104,6 +103,10 @@
         Ingin mengenal lebih dekat dunia Ayam Mangonkong? Kami siap memberikan informasi terbaik seputar jenis-jenis ayam yang kami tampilkan. Jangan ragu untuk menghubungi kami kapan saja!
         </p>
         <a href="page/tentang.html" class="btn">Pelajari Selengkapnya</a>
+    `;
+
+    document.getElementById("aboutImage").innerHTML = `
+        <img src="images/kandung.jpeg" alt="Gambar Tempat Kandang" class="img-responsive">
     `;
 </script>
 
