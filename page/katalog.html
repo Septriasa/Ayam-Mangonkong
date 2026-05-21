@@ -22,21 +22,6 @@
                 <a href="katalog.html" class="dropbtn">
                     Kategori <i class="fa-solid fa-caret-down"></i>
                 </a>
-
-                <!-- pilihan jenis ayam -->
-                <ul class="dropdown-content">
-                    <li><a href="mangonkong-original.html">Mangonkong Original</a></li>
-                    <li><a href="mangonkong-assel.html">Mangonkong Assel</a></li>
-                    <li><a href="mangonkong-booster.html">Mangonkong Booster</a></li>
-                    <li><a href="mangonkong-extra-pama.html">Mangonkong Extra Pama</a></li>
-                    <li><a href="mangonkong-platinum-bangkok.html">Mangonkong Platinum Bangkok</a></li>
-                    <li><a href="mangonkong-platinum-khoygon.html">Mangonkong Platinum Khoygon</a></li>
-                    <li><a href="mangonkong-platinum-plucker.html">Mangonkong Platinum Plucker</a></li>
-                    <li><a href="mangonkong-shamo.html">Mangonkong Shamo</a></li>
-                    <li><a href="mangonkong-vietkong.html">Mangonkong Vietkong</a></li>
-                </ul>
-            </li>
-
             <li><a href="../page/tentang.html">Tentang</a></li>
             <li><a href="../page/kontak.html">Kontak</a></li>
         </ul>
@@ -48,69 +33,140 @@
 </header>
 
 <!-- ISIEN NDEK SINI -->
-<div class="container">
-    <div class="katalog-title">
-        <span>GALERI KAMI :</span>
+<section class="katalog-section">
+
+    <div class="judul-katalog">
+        <h2>GALERI KAMI :</h2>
         <h1>9 Jenis Ayam Pilihan :</h1>
     </div>
-</div>
 
-<div class="grid" >
-    <div class="cardd">
-        <h3>Ayam Mangonkong Original</h3>
-        <img src="../images/mangonkong original.png">
-        <a href="mangonkong-original.html"><button class="btn">Detail</button></a>
+    <div class="container">
+        <div class="grid" id="katalogContainer"></div>
     </div>
 
-    <div class="cardd">
-        <h3>Ayam Platinum Bangkok</h3>
-        <img src="../images/mangonkong platinum bangkok.png">
-        <a href="mangonkong-platinum-bangkok.html"><button class="btn">Detail</button></a>
-    </div>
+</section>
 
-    <div class="cardd">
-        <h3>Ayam Platinum Xtra Pama</h3>
-        <img src="../images/mangonkong extra pama.png">
-        <a href="mangonkong-extra-pama.html"><button class="btn">Detail</button></a>
-    </div>
+<!-- popup -->
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Shamo</h3>
-        <img src="../images/mangonkong shamo.png">
-        <a href="mangonkong-shamo.html"><button class="btn">Detail</button></a>
-    </div>
+<div class="popup" id="popup">
+    <div class="popup-content">
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Platinum Plucker</h3>
-        <img src="../images/mangonkong platinum plucker.png">
-        <a href="mangonkong-platinum-plucker.html"><button class="btn">Detail</button></a>
-    </div>
+        <span class="close-btn" id="closePopup">&times;</span>
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Booster</h3>
-        <img src="../images/mangonkong booster.png">
-        <a href="mangonkong-booster.html"><button class="btn">Detail</button></a>
-    </div>
+        <img id="popupImg" src="" alt="">
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Assel</h3>
-        <img src="../images/mangonkong assel.png">
-        <a href="mangonkong-assel.html"><button class="btn">Detail</button></a>
-    </div>
+        <h2 id="popupTitle"></h2>
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Vietkong</h3>
-        <img src="../images/mangonkong vietkong.png">
-        <a href="mangonkong-vietkong.html"><button class="btn">Detail</button></a>
-    </div>
+        <p id="popupDesc"></p>
 
-    <div class="cardd">
-        <h3>Ayam Mangonkong Platinum Khoygon</h3>
-        <img src="../images/mangonkong platinum khoygon.png">
-        <a href="mangonkong-platinum-khoygon.html"><button class="btn">Detail</button></a>
     </div>
 </div>
 
+<script>
+const dataAyam = [
+{
+    judul: "Ayam Mangonkong Original",
+    img: "../images/mangonkong original.png",
+    desc: "Ayam unggulan dengan tubuh kuat, tulang kokoh, dan pukulan keras khas Mangonkong."
+},
+
+{
+    judul: "Ayam Platinum Bangkok",
+    img: "../images/mangonkong platinum bangkok.png",
+    desc: "Ayam Bangkok dengan postur gagah, badan tinggi, dan pukulan yang kuat serta bertenaga. Dikenal memiliki fisik yang bagus dan tahan bertarung."
+},
+
+{
+    judul: "Ayam Platinum Xtra Pama",
+    img: "../images/mangonkong extra pama.png",
+    desc: "Silangan Mangonkong dan Pama yang lincah, agresif, dan memiliki pukulan cepat. Ayam ini juga dikenal aktif dan memiliki mental bertarung yang baik."
+},
+
+{
+    judul: "Ayam Mangonkong Shamo",
+    img: "../images/mangonkong shamo.png",
+    desc: "Ayam bertubuh tinggi dan berotot dengan pukulan sangat keras dan mematikan. Memiliki gaya bertarung atas dengan tenaga pukul besar."
+},
+
+{
+    judul: "Ayam Mangonkong Platinum Plucker",
+    img: "../images/mangonkong platinum plucker.png",
+    desc: "Memiliki gaya bertarung agresif dan cepat dengan pukulan antik khas Mangonkong yang kuat. Dikenal tahan pukul dan aktif menyerang."
+},
+
+{
+    judul: "Ayam Mangonkong Booster",
+    img: "../images/mangonkong booster.png",
+    desc: "Ayam Mangonkong murni level tertinggi dengan darah jerangkong kuat, sangat tahan pukul, dan memiliki pukulan KO mematikan khas Mangonkong."
+},
+
+{
+    judul: "Ayam Mangonkong Assel",
+    img: "../images/mangonkong assel.png",
+    desc: "Ayam berbadan besar dengan tulang kuat dan pukulan keras mematikan. Memiliki tenaga besar serta daya tahan fisik yang baik."
+},
+
+{
+    judul: "Ayam Mangonkong Vietkong",
+    img: "../images/mangonkong vietkong.png",
+    desc: "Memiliki tulang besar, sangat tahan pukul, dan pukulan yang kuat ke bagian atas. Dikenal sebagai ayam bertubuh kokoh dan kuat bertarung."
+},
+
+{
+    judul: "Ayam Mangonkong Platinum Khoygon",
+    img: "../images/mangonkong platinum khoygon.png",
+    desc: "Terkenal dengan pukulan cepat ke kepala yang mampu membuat lawan linglung. Memiliki gaya bertarung aktif dan agresif."
+}
+
+];
+
+const katalogContainer = document.getElementById("katalogContainer");
+
+dataAyam.forEach((item) => {
+    katalogContainer.innerHTML += `
+    <div class="cardd">
+        <h3>${item.judul}</h3>
+        <div class="card-img">
+            <img src="${item.img}" alt="${item.judul}">
+        </div>
+        <button class="btn detailBtn"
+            data-img="${item.img}"
+            data-title="${item.judul}"
+            data-desc="${item.desc}">
+            Detail
+        </button>
+    </div>
+    `;
+});
+
+
+const popup = document.getElementById("popup");
+const popupImg = document.getElementById("popupImg");
+const popupTitle = document.getElementById("popupTitle");
+const popupDesc = document.getElementById("popupDesc");
+
+document.querySelectorAll(".detailBtn").forEach(button => {
+    button.addEventListener("click", () => {
+        popup.style.display = "flex";
+        popupImg.src = button.getAttribute("data-img");
+        popupTitle.innerText = button.getAttribute("data-title");
+        popupDesc.innerText = button.getAttribute("data-desc");
+    });
+});
+
+document.getElementById("closePopup").addEventListener("click", () => {
+
+    popup.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+
+    if(e.target == popup){
+        popup.style.display = "none";
+    }
+});
+
+</script>
 
 <!-- Bagian Footer -->
 <footer>

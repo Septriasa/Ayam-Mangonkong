@@ -344,7 +344,7 @@ footer {
     }
 }
 /* Katalog */
-.container{
+/* .container{
   padding:60px 80px;
 }
 
@@ -391,7 +391,7 @@ footer {
 }
 
 /* ===== DETAIL ===== */
-.detail{
+/* .detail{
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -417,13 +417,13 @@ footer {
 
 /* Bagian .katalog-title */
 
-.katalog-title{
+/* .katalog-title{
     text-align:center;
     margin-bottom:60px;
     font-family: 'Poppins', sans-serif;
-}
+} */
 /* TEXT RED */
-.katalog-title span{
+/* .katalog-title span{
     display:block;
     font-size:24px;
     font-weight:500;
@@ -433,15 +433,15 @@ footer {
     font-weight: 600;
 }
 /* MAIN TITLE */
-.katalog-title h1{
+/* .katalog-title h1{
     font-size:54px;
     font-weight:700;
     color:#000000;
     line-height:1.3;
-}
+} */
 
 /* detail */
-.active-nav{
+/* .active-nav{
   font-weight:700;
 }
 .detail-wrapper{
@@ -481,12 +481,12 @@ footer {
   height:520px;
   object-fit:cover;
   border-radius:10px;
-}
+} */
 /* =========================
    CARD REKOMENDASI
 ========================= */
 
-.recommendation-section{
+/* .recommendation-section{
   display:flex;
   justify-content:center;
   gap:45px;
@@ -534,7 +534,7 @@ footer {
 .recommend-card button:hover{
   background:#8f0000;
   
-}
+}  */
 
 /* About */
 .about-container {
@@ -745,4 +745,177 @@ footer {
 
 .about-text .btn:hover {
     background-color: #800f03;
+}
+
+
+/* katalog baru */
+/* section katalog */
+.katalog-section{
+    width:100%;
+    padding:40px 0 80px;
+}
+
+/* judul */
+.judul-katalog{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.judul-katalog h2{
+    font-size:42px;
+    color:#c11212;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.judul-katalog h1{
+    font-size:55px;
+    font-weight:800;
+    color:#111;
+}
+
+/* container */
+.container{
+    width:100%;
+    padding:0 80px;
+    box-sizing:border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:35px;
+}
+
+/* cardd katalog */
+
+.cardd{
+    width:260px;              
+    background:#ffffff;
+    border:1px solid #d2d2d2;
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    transition:0.3s;
+    margin:auto;
+}
+
+.cardd:hover{
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.10);
+}
+
+/* judul card */
+.cardd h3{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#111;
+}
+
+/* img katalog */
+.card-img{
+    width:100%;
+    height:260px;
+    overflow:hidden;
+    border-radius:10px;
+    margin-bottom:18px;
+}
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* button */
+.btn{
+    background:#b51c1c;
+    color:#fff;
+    border:none;
+    padding:9px 22px;
+    border-radius:8px;
+    font-size:13px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
+}
+.btn:hover{
+    background:#8f1111;
+}
+
+/* popup */
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-content{
+    width:260px;
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    position:relative;
+    text-align:center;
+    animation:popupShow 0.3s ease;
+}
+
+/* animation katalog */
+@keyframes popupShow{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* button close card */
+.close-btn{
+    position:absolute;
+    top:14px;
+    right:22px;
+    font-size:28px;
+    font-weight:400;   /* tidak terlalu bold */
+    cursor:pointer;
+    color:#030202;
+    z-index:10;
+    transition:0.3s;
+}
+
+/* img popup */
+.popup-content img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:18px;
+}
+
+.popup-content h2{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#111;
+    font-weight:700;
+}
+
+.popup-content p{
+    font-size:13px;
+    line-height:1.7;
+    color:#555;
+    text-align:justify;
+}
+/* hover button*/
+.close-btn:hover{
+    transform:scale(1.1);
 }
